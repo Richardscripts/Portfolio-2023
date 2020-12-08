@@ -1,0 +1,111 @@
+header > div > h1 {
+  font-family: 'Kalam';
+  font-size: 38px;
+  color: black;
+  /* color: rgb(50, 113, 207); */
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+header > div > h2 {
+  font-family: 'Ubuntu Condensed';
+  font-size: 18px;
+  color: black;
+}
+
+header > div {
+  padding: 40px;
+  margin-left: 8%;
+  padding-top: 80px;
+}
+
+header > div > nav {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu Condensed';
+}
+
+nav > a {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: rgb(255, 255, 255) 2px solid;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+nav > a:hover {
+  border: rgb(241, 241, 241) 2px solid;
+  border-radius: 6px;
+  padding: 2px;
+  text-decoration: line-through;
+  box-shadow: 2px 7px 22px rgb(224, 224, 224);
+}
+
+.Portfolio:hover {
+  color: rgb(50, 113, 207);
+}
+
+.About:hover {
+  color: rgb(189, 50, 207);
+}
+
+.Contact:hover {
+  color: rgb(50, 207, 181);
+}
+
+hr {
+  width: 140px;
+  border: 1px rgb(204, 204, 204) solid;
+}
+
+section > h2 {
+  font-family: 'Ubuntu Condensed';
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.first-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-product-img,
+.second-product-img,
+.third-product-img {
+  /* width: 980px;
+  height: 650px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: row;
+  align-items: center; */
+  transition: transform 0.3s;
+}
+
+.first-product-img > img,
+.second-product-img > img {
+  width: 780px;
+  border-radius: 6px;
+}
+
+.third-product-img > img {
+  width: 638px;
+}
+
+.first-product-info {
+  color: rgb(0, 0, 0);
+  width: 758px;
+}
+
+.first-product-img:hover,
+.second-product-img:hover,
+.third-product-img:hover {
+  transform: scale(0.9);
+}
+
+.second-product {
+  text-align: right;
+}
