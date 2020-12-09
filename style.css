@@ -1,23 +1,33 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
 header > div > h1 {
   font-family: 'Kalam';
   font-size: 38px;
-  color: black;
   /* color: rgb(50, 113, 207); */
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
+  color: rgb(78, 78, 78);
 }
 
 header > div > h2 {
   font-family: 'Ubuntu Condensed';
   font-size: 18px;
   color: black;
+  margin-top: 0;
 }
 
 header > div {
-  padding: 40px;
-  margin-left: 8%;
-  padding-top: 80px;
+  padding: 26px 42px 0px 32px;
+  line-height: 31px;
 }
 
 header > div > nav {
@@ -44,6 +54,10 @@ nav > a:hover {
   box-shadow: 2px 7px 22px rgb(224, 224, 224);
 }
 
+.right-nav {
+  padding: 30px 32px 52px 52px;
+}
+
 .Portfolio:hover {
   color: rgb(50, 113, 207);
 }
@@ -57,20 +71,104 @@ nav > a:hover {
 }
 
 hr {
-  width: 140px;
-  border: 1px rgb(204, 204, 204) solid;
+  width: 80px;
+  height: 2px;
+  background-color: rgb(204, 204, 204);
+  border: none;
 }
 
 section > h2 {
   font-family: 'Ubuntu Condensed';
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 140px;
+}
+
+/* .background-square {
+  width: 685px;
+  height: 300px;
+  background-color: rgb(241, 241, 241);
+  position: absolute;
+  margin-left: 360px;
+  margin-top: -80px;
+  } */
+
+.about-section {
+  margin-bottom: 100px;
+}
+
+.about-text {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Ubuntu Condensed';
+  font-size: 26px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.about-text > span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.about-text > span > span {
+  transition: font-style 1s;
+}
+
+.about-text > span > span:hover {
+  font-style: italic;
+}
+
+.about-text > p {
+  color: rgb(20, 20, 20);
+  text-transform: uppercase;
+  font-size: 32px;
+  transform: scaleY(1.2);
+  font-weight: bold;
+  line-height: 38px;
+}
+
+.right-arrow-img {
+  transform: rotate(-27deg);
+  text-align: right;
+  margin-top: 180px;
+  z-index: 1;
+}
+
+.right-arrow-img > img {
+  width: 210px;
+}
+
+.code-icons {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  padding: 24px;
+}
+
+.code-icons > img {
+  width: 60px;
+  margin-right: 60px;
+}
+
+.portfolio-section {
+  margin-top: 110px;
+}
+
+.portfolio-section > h2 {
+  text-align: center;
+  font-family: 'Ubuntu Condensed';
+  font-size: 39px;
+  letter-spacing: 1px;
+  /* transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); */
 }
 
 .first-product {
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 
 .first-product-img,
@@ -87,12 +185,12 @@ section > h2 {
 
 .first-product-img > img,
 .second-product-img > img {
-  width: 780px;
-  border-radius: 6px;
+  width: 810px;
+  border-radius: 38px;
 }
 
 .third-product-img > img {
-  width: 638px;
+  width: 608px;
 }
 
 .first-product-info {
@@ -100,12 +198,175 @@ section > h2 {
   width: 758px;
 }
 
-.first-product-img:hover,
+/* .first-product-img:hover,
 .second-product-img:hover,
 .third-product-img:hover {
   transform: scale(0.9);
-}
+} */
 
 .second-product {
   text-align: right;
+}
+
+.blue {
+  color: rgb(50, 113, 207);
+}
+
+.violet {
+  color: rgb(189, 50, 207);
+}
+
+.teal {
+  color: rgb(50, 207, 181);
+}
+
+/*Hamburger menu*/
+
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: rgb(167, 167, 167);
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: rgb(54, 54, 54);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: rgb(50, 207, 181);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  margin: -100px 0px 0 0;
+  padding: 50px;
+  right: 0%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0 0;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+hr.rainbow {
+  border: none;
+  height: 5px;
+  width: 155px;
+  margin: auto;
+  transform: rotate(-3deg);
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(50, 113, 207),
+    rgb(189, 50, 207),
+    rgb(50, 207, 181)
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    rgb(50, 113, 207),
+    rgb(189, 50, 207),
+    rgb(50, 207, 181)
+  );
+  background-image: -ms-linear-gradient(
+    left,
+    rgb(50, 113, 207),
+    rgb(189, 50, 207),
+    rgb(50, 207, 181)
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgb(50, 113, 207),
+    rgb(189, 50, 207),
+    rgb(50, 207, 181)
+  );
+}
+
+.fade {
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.3s; /* don't forget to set a duration! */
 }

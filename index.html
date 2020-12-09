@@ -8,27 +8,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div>
-        <h1>Richard Scott</h1>
-        <nav><a class='Portfolio' href='#link1'>Portfolio</a> | <a class='About' href='#link1'>About</a> |
+        <h1>Richard C. Scott</h1>
+        <nav class='left-nav' role="navigation"><a class='Portfolio' href='#link1'>Portfolio</a> | <a class='About' href='#link1'>About</a> |
           <a class='Contact' href='#link1'>Contact</a>
         </nav>
-        <h2>Full Stack Web Developer</h2>
+        <h2>&nbsp;Full Stack Web Developer</h2>
         </div>
+        <nav class='right-nav' role="navigation">
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            
+            <span style='background: rgb(50, 113, 207)'></span>
+            <span style='background:  rgb(189, 50, 207)'></span>
+            <span style='background:    rgb(50, 207, 181)'></span>
+           
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Info</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+            </ul>
+          </div>
+        </nav>
     </header>
-    <hr />
+
     <main>
-      <section class='about-section'>
-        <h2>About</h2>
+      <section class='fade about-section'>
+        <div class='background-square'></div>
+        <div class='about-text'>
+          <span><span class='blue'>Coding</span> - <span class='violet'>Creating</span> - <span class='teal'>Connecting</span></span>
+          <p>Hello! I'm Richard, a web developer from Philadelphia.
+            <br/>
+            My mission is to make the world a better place with code;
+            <br/>
+            I want to become a part of something bigger than myself!
+          </p>
+            (when I'm not binging netflix of course)
+        </div>
+      
+        <!-- <div class='right-arrow-img'>
+          <img src='images/right-drawn-arrow.png' alt='an arrow pointing down'/>
+        </div> -->
       </section>
-      <hr />
+      <hr class="rainbow"/>
+      <div class='code-icons'>
+        <img src='images/javascript.png' alt='javascript logo' />
+        <img src='images/react.png' alt='react logo' />
+        <img style='width: 100px; height: 30.2px;' src='images/ExpressJS.png' alt='javascript logo' />
+        <img src='images/nodejs.png' alt='javascript logo' />
+        <img src='images/postgresql.png' alt='javascript logo' />
+      </div>
       <section class='portfolio-section'>
         <h2>Portfolio</h2>
+        <hr />
         <div class='first-product'>
           <div class='first-product-img'>
             <img src='/images/product1.png' alt='desktop, phone, ipad' />
