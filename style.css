@@ -9,6 +9,10 @@ header {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 header > div > h1 {
   font-family: 'Kalam', Arial, Helvetica, sans-serif;
   font-size: 38px;
@@ -81,11 +85,11 @@ section > h2 {
   text-align: center;
 }
 
-.about-section {
+.intro-section {
   margin-bottom: 100px;
 }
 
-.about-text {
+.intro-text {
   margin-top: 50px;
   text-align: center;
   font-size: 26px;
@@ -93,20 +97,20 @@ section > h2 {
   letter-spacing: 1px;
 }
 
-.about-text > span {
+.intro-text > span {
   font-size: 15px;
   font-weight: bold;
 }
 
-.about-text > span > span {
+.intro-text > span > span {
   transition: font-style 1s;
 }
 
-.about-text > span > span:hover {
+.intro-text > span > span:hover {
   font-style: italic;
 }
 
-.about-text > p {
+.intro-text > p {
   color: rgb(20, 20, 20);
   text-transform: uppercase;
   font-size: 32px;
@@ -150,7 +154,8 @@ section > h2 {
 }
 
 .portfolio-section > h2,
-.about-section > h2 {
+.about-section > h2,
+.contact-section > h2 {
   text-align: center;
   font-size: 49px;
   letter-spacing: 1px;
@@ -185,7 +190,7 @@ section > h2 {
 }
 
 .portfolio-section p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: rgb(58, 58, 58);
   width: 500px;
@@ -196,14 +201,8 @@ section > h2 {
   letter-spacing: 1px;
 }
 
-hr.sidebar {
-  height: 3px;
-  margin-top: -10px;
-  background: rgb(230, 230, 230);
-}
-
 .product-summary {
-  font-size: 16px;
+  font-size: 18px;
   width: 375px;
   margin: auto;
   letter-spacing: 2px;
@@ -228,7 +227,8 @@ hr.sidebar {
   justify-content: center;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-bottom: 110px;
+  margin-bottom: 140px;
+  margin-right: 65px;
 }
 
 .second-product {
@@ -236,31 +236,48 @@ hr.sidebar {
   justify-content: center;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-bottom: 110px;
-  margin-left: 15px;
+  margin-bottom: 140px;
+  margin-left: 45px;
+}
+
+.third-product {
+  margin-bottom: 80px;
 }
 
 .background-box {
   z-index: -1;
   position: absolute;
-  height: 450px;
-  width: 705px;
-  transform: translate(-70%, -9%);
+  height: 525px;
+  width: 590px;
+  transform: translate(-20%, -9%);
   /* background-color: rgb(70, 135, 233); */
-  background-color: rgb(243, 243, 243);
-  /* background-image: linear-gradient(to left, rgb(243, 243, 243), white); */
-  border-radius: 3px;
+  background-color: rgb(245, 245, 245);
+  background-image: linear-gradient(to left, rgb(247, 247, 247), white);
+  border-radius: 8px;
 }
 
 .background-box-second {
   z-index: -1;
   position: absolute;
-  height: 450px;
-  width: 705px;
-  transform: translate(25%, -10%);
-  background-color: rgb(243, 243, 243);
+  height: 510px;
+  width: 590px;
+  transform: translate(-12%, -8%);
+  /* background-color: rgb(243, 243, 243); */
+  background-image: linear-gradient(to right, rgb(247, 247, 247), white);
   /* background-color: rgb(255, 0, 0); */
-  border-radius: 3px;
+  border-radius: 8px;
+}
+
+.background-box-third {
+  z-index: -1;
+  position: absolute;
+  height: 525px;
+  width: 590px;
+  transform: translate(-20%, -9%);
+  /* background-color: rgb(70, 135, 233); */
+  /* background-color: rgb(245, 245, 245); */
+  background-image: linear-gradient(to left, rgb(247, 247, 247), white);
+  border-radius: 8px;
 }
 
 .product-tag {
@@ -309,7 +326,7 @@ hr.sidebar {
 }
 
 .second-product-img > img {
-  width: 700px;
+  width: 725px;
   border-radius: 6px;
 }
 
@@ -319,6 +336,7 @@ hr.sidebar {
 
 .first-product-info {
   color: rgb(0, 0, 0);
+  /* margin-top: -40px; */
 }
 
 .second-product-info {
@@ -327,7 +345,7 @@ hr.sidebar {
 
 .first-product-info hr,
 .second-product-info hr {
-  width: 125px !important;
+  width: 145px !important;
   margin-top: 20px !important;
   margin-bottom: 25px !important;
 }
@@ -347,11 +365,125 @@ hr.sidebar {
   border: 2px rgb(73, 73, 73) solid;
 }
 
+.more-projects-button {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.more-projects-button > a:hover {
+  text-decoration: underline;
+  color: rgb(45, 190, 166);
+}
+
+.more-projects-button > a {
+  font-size: 41px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  transition: color 1s;
+  color: rgb(109, 109, 109);
+}
+
 /* .first-product-img:hover,
 .second-product-img:hover,
 .third-product-img:hover {
   transform: scale(0.9);
 } */
+
+.about-section {
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+
+.about-section-text {
+  display: flex;
+  justify-content: center;
+}
+
+.about-section p {
+  width: 450px;
+  margin-top: 80px;
+  text-align: justify;
+  margin-right: 40px;
+  padding: 0;
+}
+
+.about-section-resume a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(45, 190, 166);
+}
+
+.contact-section {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.contact-section-info {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section-info span {
+  transition: color 1s;
+}
+
+.contact-section-info span:hover {
+  color: rgb(45, 190, 166);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-end;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: grey 2px solid;
+  margin-bottom: 20px;
+  width: 250px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.contact-form input {
+  height: 20px;
+  vertical-align: 0px;
+}
+
+.contact-form textarea {
+  vertical-align: -48px;
+}
+
+form button {
+  padding: 9px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: 'Ubuntu Condensed', Arial, Helvetica, sans-serif;
+  background-color: white;
+  border: 2px rgb(163, 163, 163) solid;
+  color: rgb(54, 54, 54);
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+
+form button:active {
+  margin-bottom: -1px;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-left: 40px;
+}
 
 .blue {
   color: rgb(50, 113, 207);
