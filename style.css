@@ -16,7 +16,6 @@ a {
 header > div > h1 {
   font-family: 'Kalam', Arial, Helvetica, sans-serif;
   font-size: 38px;
-  /* color: rgb(50, 113, 207); */
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
@@ -165,11 +164,6 @@ section > h2 {
   font-size: 49px;
   margin: 0;
   letter-spacing: 4px;
-  /* color: rgb(77, 77, 77);
-  color: rgb(235, 89, 52);
-  color: rgb(189, 50, 207); */
-  /* color: rgb(77, 140, 233); */
-  /* color: rgb(122, 122, 122); */
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   padding: 0;
   display: inline;
@@ -250,7 +244,6 @@ section > h2 {
   height: 525px;
   width: 590px;
   transform: translate(-20%, -9%);
-  /* background-color: rgb(70, 135, 233); */
   background-color: rgb(245, 245, 245);
   background-image: linear-gradient(to left, rgb(247, 247, 247), white);
   border-radius: 8px;
@@ -262,9 +255,7 @@ section > h2 {
   height: 510px;
   width: 590px;
   transform: translate(-12%, -8%);
-  /* background-color: rgb(243, 243, 243); */
   background-image: linear-gradient(to right, rgb(247, 247, 247), white);
-  /* background-color: rgb(255, 0, 0); */
   border-radius: 8px;
 }
 
@@ -274,8 +265,6 @@ section > h2 {
   height: 525px;
   width: 590px;
   transform: translate(-20%, -9%);
-  /* background-color: rgb(70, 135, 233); */
-  /* background-color: rgb(245, 245, 245); */
   background-image: linear-gradient(to left, rgb(247, 247, 247), white);
   border-radius: 8px;
 }
@@ -308,18 +297,6 @@ section > h2 {
   transform: scale(1.1);
 }
 
-.first-product-img,
-.second-product-img,
-.third-product-img {
-  /* width: 980px;
-  height: 650px;
-  background-color: rgb(241, 241, 241);
-  display: flex;
-  flex-direction: row;
-  align-items: center; */
-  transition: transform 0.3s;
-}
-
 .first-product-img > img {
   width: 780px;
   border-radius: 6px;
@@ -336,7 +313,6 @@ section > h2 {
 
 .first-product-info {
   color: rgb(0, 0, 0);
-  /* margin-top: -40px; */
 }
 
 .second-product-info {
@@ -383,12 +359,6 @@ section > h2 {
   transition: color 1s;
   color: rgb(109, 109, 109);
 }
-
-/* .first-product-img:hover,
-.second-product-img:hover,
-.third-product-img:hover {
-  transform: scale(0.9);
-} */
 
 .about-section {
   font-size: 24px;
@@ -509,8 +479,6 @@ form button:active {
   background-color: rgb(45, 190, 166);
 }
 
-/*Hamburger menu*/
-
 #menuToggle {
   display: block;
   position: relative;
@@ -537,14 +505,11 @@ form button:active {
   top: -7px;
   left: -5px;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -567,35 +532,21 @@ form button:active {
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: rgb(50, 207, 181);
 }
 
-/*
- * But let's hide the middle one.
- */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
   display: flex;
   align-items: center;
@@ -606,7 +557,6 @@ form button:active {
   right: 0%;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   transform-origin: 0 0;
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -631,9 +581,6 @@ form button:active {
   transform: scale(1.2);
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -680,8 +627,3 @@ hr.rainbow {
   animation-duration: 1.7s;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
-/* .left {
-  display: inline-flex;
-  justify-content: left;
-} */
