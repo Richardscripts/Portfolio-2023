@@ -675,6 +675,12 @@ hr.rainbow {
   animation-duration: 1.3s;
 }
 
+.delay {
+  animation: fadeIn;
+  animation-duration: 1.7s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 /* .left {
   display: inline-flex;
   justify-content: left;
