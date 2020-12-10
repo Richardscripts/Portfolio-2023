@@ -6,7 +6,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 a {
@@ -57,7 +56,14 @@ nav > a:hover {
 }
 
 .right-nav {
-  padding: 30px 32px 52px 52px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 12px 52px 52px;
+  overflow: hidden;
+  position: absolute;
+  width: 500px;
+  top: 0;
+  right: 0;
 }
 
 .Portfolio:hover {
@@ -141,6 +147,11 @@ section > h2 {
 .code-icons > img {
   width: 60px;
   margin-right: 60px;
+}
+
+.express {
+  width: 100px !important;
+  height: 30.2px !important;
 }
 
 .portfolio-section {
@@ -363,19 +374,21 @@ section > h2 {
 .about-section {
   font-size: 24px;
   margin-bottom: 80px;
+  margin: auto;
+  width: 1000px;
 }
 
 .about-section-text {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .about-section p {
   width: 450px;
   margin-top: 80px;
   text-align: justify;
-  margin-right: 40px;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .about-section-resume a {
@@ -422,6 +435,7 @@ section > h2 {
   font-weight: bold;
   font-size: 18px;
   margin-left: 5px;
+  color: grey;
 }
 
 .contact-form input {
@@ -434,25 +448,45 @@ section > h2 {
 }
 
 form button {
-  padding: 9px 25px;
+  padding: 11px 27px;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 23px;
   font-family: 'Ubuntu Condensed', Arial, Helvetica, sans-serif;
   background-color: white;
-  border: 2px rgb(163, 163, 163) solid;
-  color: rgb(54, 54, 54);
+  border: 3px rgb(189, 50, 207) solid;
+  color: rgb(189, 50, 207);
   cursor: pointer;
   margin-bottom: 1px;
+  transition: transform 0.4s;
 }
 
 form button:active {
-  margin-bottom: -1px;
+  transform: scale(0.9);
+}
+
+form button:hover {
+  border: 3px rgb(50, 113, 207) solid;
+  color: rgb(50, 113, 207);
+  transform: scale(0.9);
 }
 
 .button-wrapper {
   text-align: center;
-  margin-left: 40px;
+}
+
+footer {
+  padding: 1px;
+  background-color: rgb(241, 241, 241);
+  margin-top: 80px;
+  text-align: center;
+  color: rgb(50, 113, 207);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer a {
+  color: black;
 }
 
 .blue {
@@ -626,4 +660,161 @@ hr.rainbow {
   animation: fadeIn;
   animation-duration: 1.7s;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media all and (max-width: 1290px) {
+  .background-box,
+  .background-box-second,
+  .background-box-third {
+    display: none;
+  }
+  .first-product-img > img,
+  .second-product-img > img {
+    width: 100%;
+  }
+
+  .third-product-img > img {
+    width: 75%;
+  }
+
+  .code-icons {
+    justify-content: space-evenly;
+  }
+
+  .code-icons > img {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .first-product {
+    margin-right: 0;
+    padding: 20px;
+  }
+  .second-product {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .about-section {
+    width: 100%;
+  }
+  .about-section-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section-text > div:nth-of-type(2) > p {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media all and (max-width: 875px) {
+  .first-product,
+  .second-product,
+  .third-product {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .third-product {
+    margin: auto;
+  }
+
+  .second-product-info {
+    margin-right: 0;
+  }
+
+  .contact-section-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .code-icons {
+    background-color: white;
+  }
+
+  .right-nav {
+    height: 500px;
+    width: 150px;
+  }
+
+  #menu {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 220px;
+    margin: -55px -68px 0 0px;
+    padding: 50px;
+    right: 0%;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0 0;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    opacity: 0.91;
+    border-radius: 36px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .first-product,
+  .second-product,
+  .third-product {
+    flex-direction: column;
+  }
+
+  .contact-section-info {
+    flex-direction: column;
+  }
+
+  .code-icons img {
+    width: 14%;
+  }
+
+  .express {
+    width: 26% !important;
+    height: 26% !important;
+  }
+
+  .about-section p {
+    width: 99%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .portfolio-section p {
+    width: 100%;
+  }
+
+  .product-summary {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .right-nav {
+    padding: 12px 8px 0px 0px;
+  }
+
+  header > div > h1 {
+    font-size: 28px;
+  }
+
+  header > div > h2 {
+    font-size: 18px;
+  }
+
+  header > div > nav {
+    font-size: 14px;
+  }
+
+  header > div {
+    padding: 8px 0px 0px 8px;
+    line-height: 31px;
+  }
 }

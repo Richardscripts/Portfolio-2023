@@ -16,8 +16,8 @@
     <header>
         <div>
         <h1>Richard C. Scott</h1>
-        <nav class='left-nav' role="navigation"><a class='Portfolio' href='#link1'>Portfolio</a> | <a class='About' href='#link1'>About</a> |
-          <a class='Contact' href='#link1'>Contact</a>
+        <nav class='left-nav' role="navigation"><a class='Portfolio' href='#portfolio'>Portfolio</a> | <a class='About' href='#about'>About</a> |
+          <a class='Contact' href='#contact'>Contact</a>
         </nav>
         <h2>&nbsp;Full Stack Web Developer</h2>
         </div>
@@ -65,11 +65,11 @@
       <div class='code-icons'>
         <img  src='images/javascript.png' alt='javascript logo' />
         <img src='images/react.png' alt='react logo' />
-        <img style='width: 100px; height: 30.2px;' src='images/ExpressJS.png' alt='javascript logo' />
+        <img class='express' src='images/ExpressJS.png' alt='javascript logo' />
         <img src='images/nodejs.png' alt='javascript logo' />
         <img src='images/postgresql.png' alt='javascript logo' />
       </div>
-      <section class='portfolio-section'>
+      <section class='portfolio-section' id='portfolio'>
         <h2>Portfolio</h2>
         <hr class='rainbow'/>
         <div class='first-product'>
@@ -149,7 +149,7 @@
         </div>
         <div class='more-projects-button'><a href='https://github.com/Richardscripts' target='_blank'>More Projects ❯</a></div>
       </section>
-      <section class='about-section'>
+      <section class='about-section' id='about'>
         <h2>About</h2>
         <hr class='rainbow'/>
         <div class='about-section-text'>
@@ -187,24 +187,26 @@
           </div>
         </div>
       </section>
-      <section class='contact-section'>
+      <section class='contact-section' id='contact'>
       <h2>Contact</h2>
       <hr class='rainbow'/>
       <div class='contact-section-info'>
-        <div>My email is:<br/>  <a href="mailto:richardcarmenscott@gmail.com" target="_blank"><span class='blue'>richardcarmenscott@gmail.com</span></a></div>
+        <div>My email is<br/>  <a href="mailto:richardcarmenscott@gmail.com" target="_blank"><span class='blue'>richardcarmenscott@gmail.com</span></a>
+        </div>
         <form action="https://formspree.io/f/xoqpkwgn" method="POST">
+          <div class='background-box'></div>
           <div class="contact-form">
             ...or send a quick message!
             <label><br>
-              Your Email:
+              Your Email:<br/>
               <input type="text" name="_replyto" required="">
             </label>
             <label><br>
-              Name:
+              Name:<br/>
               <input type="text" name="name" required="">
             </label>
             <label><br>
-            Message for Me:
+            Message for Me:<br/>
               <textarea name="message" required=""></textarea>
             </label>
           </div>
@@ -216,6 +218,11 @@
     </div>
     </section>
     </main>
-    <footer></footer>
+  
+    <footer><p>© 2020. All rights reserved.<br/>
+      Icons by 
+      <a rel="noopener noreferrer" 
+      target="_blank" 
+      href="https://www.flaticon.com/">FlatIcons</p></a></footer>
 </body>
 </html>
