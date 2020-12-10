@@ -308,17 +308,17 @@ section > h2 {
   transform: scale(1.1);
 }
 
-.first-product-img > img {
+.first-product-img img {
   width: 780px;
   border-radius: 6px;
 }
 
-.second-product-img > img {
+.second-product-img img {
   width: 725px;
   border-radius: 6px;
 }
 
-.third-product-img > img {
+.third-product-img img {
   width: 578px;
 }
 
@@ -668,12 +668,12 @@ hr.rainbow {
   .background-box-third {
     display: none;
   }
-  .first-product-img > img,
-  .second-product-img > img {
+  .first-product-img img,
+  .second-product-img img {
     width: 100%;
   }
 
-  .third-product-img > img {
+  .third-product-img img {
     width: 75%;
   }
 
