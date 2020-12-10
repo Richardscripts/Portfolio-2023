@@ -714,7 +714,11 @@ hr.rainbow {
   .second-product,
   .third-product {
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  .second-product {
+    margin-bottom: 100px;
   }
 
   .third-product {
@@ -811,6 +815,12 @@ hr.rainbow {
 
   header > div > nav {
     font-size: 14px;
+  }
+
+  header > div > nav > a {
+    text-decoration: underline;
+    text-decoration-color: rgb(50, 113, 207);
+    text-decoration-thickness: 2px;
   }
 
   header > div {
