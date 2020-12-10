@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Ubuntu Condensed', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
 }
 
 header > div > h1 {
-  font-family: 'Kalam';
+  font-family: 'Kalam', Arial, Helvetica, sans-serif;
   font-size: 38px;
   /* color: rgb(50, 113, 207); */
   letter-spacing: 1px;
@@ -19,7 +20,6 @@ header > div > h1 {
 }
 
 header > div > h2 {
-  font-family: 'Ubuntu Condensed';
   font-size: 18px;
   color: black;
   margin-top: 0;
@@ -33,7 +33,6 @@ header > div {
 header > div > nav {
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Ubuntu Condensed';
 }
 
 nav > a {
@@ -78,19 +77,9 @@ hr {
 }
 
 section > h2 {
-  font-family: 'Ubuntu Condensed';
   letter-spacing: 1px;
   text-align: center;
 }
-
-/* .background-square {
-  width: 685px;
-  height: 300px;
-  background-color: rgb(241, 241, 241);
-  position: absolute;
-  margin-left: 360px;
-  margin-top: -80px;
-  } */
 
 .about-section {
   margin-bottom: 100px;
@@ -99,7 +88,6 @@ section > h2 {
 .about-text {
   margin-top: 50px;
   text-align: center;
-  font-family: 'Ubuntu Condensed';
   font-size: 26px;
   color: black;
   letter-spacing: 1px;
@@ -156,19 +144,151 @@ section > h2 {
   margin-top: 110px;
 }
 
-.portfolio-section > h2 {
+.portfolio-section hr {
+  width: 125px;
+  margin-bottom: 12px;
+}
+
+.portfolio-section > h2,
+.about-section > h2 {
   text-align: center;
-  font-family: 'Ubuntu Condensed';
-  font-size: 39px;
+  font-size: 49px;
   letter-spacing: 1px;
-  /* transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg); */
+}
+
+.portfolio-section h3 {
+  font-size: 49px;
+  margin: 0;
+  letter-spacing: 4px;
+  /* color: rgb(77, 77, 77);
+  color: rgb(235, 89, 52);
+  color: rgb(189, 50, 207); */
+  /* color: rgb(77, 140, 233); */
+  /* color: rgb(122, 122, 122); */
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 0;
+  display: inline;
+  line-height: 0px;
+  text-transform: lowercase;
+}
+
+.first-product h3 {
+  color: rgb(85, 145, 236);
+}
+
+.second-product h3 {
+  color: rgb(206, 70, 224);
+}
+
+.third-product h3 {
+  color: rgb(50, 207, 181);
+}
+
+.portfolio-section p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(58, 58, 58);
+  width: 500px;
+  text-align: justify;
+  width: 375px;
+  margin: auto;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+}
+
+hr.sidebar {
+  height: 3px;
+  margin-top: -10px;
+  background: rgb(230, 230, 230);
+}
+
+.product-summary {
+  font-size: 16px;
+  width: 375px;
+  margin: auto;
+  letter-spacing: 2px;
+  color: rgb(112, 112, 112);
+  font-weight: bold;
+}
+
+.product-bottom-text {
+  color: rgb(104, 104, 104);
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .first-product {
+  margin-top: 120px;
+}
+
+.first-product,
+.third-product {
   display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 110px;
+}
+
+.second-product {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 110px;
+  margin-left: 15px;
+}
+
+.background-box {
+  z-index: -1;
+  position: absolute;
+  height: 450px;
+  width: 705px;
+  transform: translate(-70%, -9%);
+  /* background-color: rgb(70, 135, 233); */
+  background-color: rgb(243, 243, 243);
+  /* background-image: linear-gradient(to left, rgb(243, 243, 243), white); */
+  border-radius: 3px;
+}
+
+.background-box-second {
+  z-index: -1;
+  position: absolute;
+  height: 450px;
+  width: 705px;
+  transform: translate(25%, -10%);
+  background-color: rgb(243, 243, 243);
+  /* background-color: rgb(255, 0, 0); */
+  border-radius: 3px;
+}
+
+.product-tag {
+  color: rgb(112, 112, 112);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.product-github {
+  margin: 12px 0px 0px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.product-github a {
+  text-decoration: none;
+}
+
+.product-github img {
+  width: 38px;
+  transition: transform 0.2s;
+}
+
+.product-github img:hover {
+  transform: scale(1.1);
 }
 
 .first-product-img,
@@ -183,19 +303,48 @@ section > h2 {
   transition: transform 0.3s;
 }
 
-.first-product-img > img,
+.first-product-img > img {
+  width: 780px;
+  border-radius: 6px;
+}
+
 .second-product-img > img {
-  width: 810px;
-  border-radius: 38px;
+  width: 700px;
+  border-radius: 6px;
 }
 
 .third-product-img > img {
-  width: 608px;
+  width: 578px;
 }
 
 .first-product-info {
   color: rgb(0, 0, 0);
-  width: 758px;
+}
+
+.second-product-info {
+  margin-right: 66px;
+}
+
+.first-product-info hr,
+.second-product-info hr {
+  width: 125px !important;
+  margin-top: 20px !important;
+  margin-bottom: 25px !important;
+}
+
+.product-languages > span {
+  border: 2px rgb(195, 195, 195) solid;
+  padding: 3px;
+  margin-right: 3px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: rgb(92, 92, 92);
+  transition: border 0.8s;
+}
+
+.product-languages span:hover {
+  color: rgb(49, 49, 49);
+  border: 2px rgb(73, 73, 73) solid;
 }
 
 /* .first-product-img:hover,
@@ -204,20 +353,28 @@ section > h2 {
   transform: scale(0.9);
 } */
 
-.second-product {
-  text-align: right;
-}
-
 .blue {
   color: rgb(50, 113, 207);
+}
+
+.bg-blue {
+  background-color: rgb(50, 113, 207);
 }
 
 .violet {
   color: rgb(189, 50, 207);
 }
 
+.bg-violet {
+  background-color: rgb(189, 50, 207);
+}
+
 .teal {
-  color: rgb(50, 207, 181);
+  color: rgb(45, 190, 166);
+}
+
+.bg-teal {
+  background-color: rgb(45, 190, 166);
 }
 
 /*Hamburger menu*/
@@ -262,7 +419,7 @@ section > h2 {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: rgb(54, 54, 54);
+  background: rgb(144, 144, 144);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -309,9 +466,10 @@ section > h2 {
  */
 #menu {
   display: flex;
+  align-items: center;
   position: absolute;
   width: 300px;
-  margin: -100px 0px 0 0;
+  margin: -105px -55px 0 0;
   padding: 50px;
   right: 0%;
   list-style-type: none;
@@ -325,6 +483,20 @@ section > h2 {
 #menu li {
   padding: 10px 0;
   font-size: 22px;
+  opacity: 1;
+  transition: transform 0.5s;
+}
+
+#menu > li > div {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu > li:hover {
+  transform: scale(1.2);
 }
 
 /*
@@ -367,6 +539,11 @@ hr.rainbow {
 }
 
 .fade {
-  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.3s; /* don't forget to set a duration! */
+  animation: fadeIn;
+  animation-duration: 1.3s;
 }
+
+/* .left {
+  display: inline-flex;
+  justify-content: left;
+} */
