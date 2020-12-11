@@ -65,6 +65,8 @@ header > div {
   width: 500px;
   top: 0;
   right: 0;
+  height: 500px;
+  width: 150px;
 }
 
 .Portfolio:hover {
@@ -590,19 +592,27 @@ footer a {
 }
 
 #menu {
-  display: flex;
+  background-color: white;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   position: absolute;
-  width: 300px;
-  margin: -81px -10px 0 0;
+  width: 100px;
+  margin: -45px -50px 0 0px;
   padding: 50px;
+  height: 90px;
   right: 0%;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0 0;
-  transform: translate(100%, 0);
+  transform: translate(0%, -100%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  opacity: 0.9;
+  border-radius: 36px;
+}
+
+#menu li {
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 #menu a {
@@ -622,7 +632,7 @@ footer a {
   border-radius: 6px;
   padding: 2px;
   text-decoration: line-through;
-  box-shadow: 2px 7px 22px rgb(224, 224, 224);
+  box-shadow: 1px 1px 12px rgb(230, 230, 230);
 }
 
 #menuToggle input:checked ~ ul {
@@ -755,30 +765,6 @@ hr.rainbow {
   .code-icons {
     background-color: white;
   }
-
-  .right-nav {
-    height: 500px;
-    width: 150px;
-  }
-
-  #menu {
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 100px;
-    margin: -45px -60px 0 0px;
-    padding: 50px;
-    height: 90px;
-    right: 0%;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0 0;
-    transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    opacity: 0.91;
-    border-radius: 36px;
-  }
 }
 
 @media all and (max-width: 500px) {
@@ -786,6 +772,10 @@ hr.rainbow {
   .second-product,
   .third-product {
     flex-direction: column;
+  }
+
+  .first-product {
+    margin-top: 80px;
   }
 
   .contact-section-info {
