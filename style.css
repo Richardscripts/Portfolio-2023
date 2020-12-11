@@ -18,7 +18,7 @@ header > div > h1 {
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
-  color: rgb(78, 78, 78);
+  color: rgb(49, 49, 49);
 }
 
 header > div > h2 {
@@ -34,29 +34,6 @@ header > div {
   line-height: 31px;
 }
 
-header > div > nav {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-nav > a {
-  text-decoration: none;
-  color: rgb(41, 41, 41);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: rgb(255, 255, 255) 2px solid;
-  border-radius: 6px;
-  padding: 2px;
-}
-
-nav > a:hover {
-  border: rgb(241, 241, 241) 2px solid;
-  border-radius: 6px;
-  padding: 2px;
-  text-decoration: line-through;
-  box-shadow: 2px 7px 22px rgb(224, 224, 224);
-}
-
 .left-nav {
   display: flex;
   flex-direction: row;
@@ -64,9 +41,19 @@ nav > a:hover {
   margin-top: 3px;
 }
 
+.left-nav img:first-of-type {
+  margin-left: 5px;
+}
+
 .left-nav img {
-  width: 30px;
-  margin-right: 15px;
+  width: 32px;
+  margin-top: 2px;
+  margin-right: 12px;
+  transition: transform 2.8s;
+}
+
+.left-nav img:hover {
+  transform: rotate3d(2, 2, 2, 360deg);
 }
 
 .right-nav {
@@ -81,15 +68,15 @@ nav > a:hover {
 }
 
 .Portfolio:hover {
-  color: rgb(50, 113, 207);
+  color: rgb(50, 113, 207) !important;
 }
 
 .About:hover {
-  color: rgb(189, 50, 207);
+  color: rgb(189, 50, 207) !important;
 }
 
 .Contact:hover {
-  color: rgb(50, 207, 181);
+  color: rgb(50, 207, 181) !important;
 }
 
 hr {
@@ -426,6 +413,13 @@ section > h2 {
   justify-content: center;
 }
 
+.contact-section-info > div {
+  align-self: stretch;
+  margin-right: 40px;
+  margin-top: 80px;
+  width: 400px;
+}
+
 .contact-section-info span {
   transition: color 1s;
 }
@@ -545,10 +539,6 @@ footer a {
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover {
-  color: rgb(167, 167, 167);
-}
-
 #menuToggle input {
   display: block;
   width: 40px;
@@ -602,9 +592,10 @@ footer a {
 #menu {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   position: absolute;
   width: 300px;
-  margin: -105px -55px 0 0;
+  margin: -81px -10px 0 0;
   padding: 50px;
   right: 0%;
   list-style-type: none;
@@ -614,23 +605,24 @@ footer a {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-  opacity: 1;
-  transition: transform 0.5s;
+#menu a {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: rgb(255, 255, 255) 2px solid;
+  border-radius: 6px;
+  padding: 2px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#menu > li > div {
-  width: 72px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#menu > li:hover {
-  transform: scale(1.2);
+#menu a:hover {
+  border: rgb(241, 241, 241) 2px solid;
+  border-radius: 6px;
+  padding: 2px;
+  text-decoration: line-through;
+  box-shadow: 2px 7px 22px rgb(224, 224, 224);
 }
 
 #menuToggle input:checked ~ ul {
@@ -714,7 +706,7 @@ hr.rainbow {
     padding: 20px;
   }
   .about-section {
-    width: 100%;
+    width: 96%;
   }
   .about-section-text {
     flex-direction: column;
@@ -767,9 +759,9 @@ hr.rainbow {
     align-items: center;
     position: absolute;
     width: 100px;
-    height: 220px;
-    margin: -55px -68px 0 0px;
+    margin: -45px -60px 0 0px;
     padding: 50px;
+    height: 90px;
     right: 0%;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -790,6 +782,7 @@ hr.rainbow {
 
   .contact-section-info {
     flex-direction: column;
+    margin-right: 0px;
   }
 
   .code-icons img {
@@ -802,17 +795,17 @@ hr.rainbow {
   }
 
   .about-section p {
-    width: 98%;
+    width: 96%;
   }
 }
 
 @media all and (max-width: 400px) {
   .portfolio-section p {
-    width: 100%;
+    width: 96%;
   }
 
   .product-summary {
-    width: 100%;
+    width: 96%;
   }
 
   .contact-form {
