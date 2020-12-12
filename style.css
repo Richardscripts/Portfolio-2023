@@ -814,6 +814,10 @@ hr.rainbow {
     padding: 12px 8px 0px 0px;
   }
 
+  header {
+    margin-bottom: 43px;
+  }
+
   header > div > h1 {
     font-size: 28px;
   }
@@ -835,5 +839,9 @@ hr.rainbow {
   header > div {
     padding: 8px 0px 0px 8px;
     line-height: 31px;
+  }
+
+  .intro-text > p {
+    font-size: 28px;
   }
 }
