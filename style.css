@@ -199,7 +199,7 @@ section > h2 {
 }
 
 .portfolio-section p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: rgb(58, 58, 58);
   text-align: left;
@@ -214,14 +214,13 @@ section > h2 {
   width: 390px;
   margin: auto;
   letter-spacing: 2px;
-  color: rgb(112, 112, 112);
   font-weight: bold;
   text-align: left;
+  color: rgb(58, 58, 58);
 }
 
 .product-bottom-text {
   color: rgb(104, 104, 104);
-  line-height: 15px;
   margin: 0;
   padding: 0;
 }
@@ -235,7 +234,7 @@ section > h2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 140px;
   margin-right: 65px;
 }
@@ -244,7 +243,7 @@ section > h2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 140px;
   margin-left: 45px;
 }
@@ -291,6 +290,7 @@ section > h2 {
   font-weight: bold;
   margin-top: 12px;
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 .product-github {
