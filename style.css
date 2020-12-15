@@ -371,7 +371,6 @@ section > h2 {
   font-size: 41px;
   font-weight: bold;
   letter-spacing: 2px;
-
   transition: color 1s;
   color: rgb(109, 109, 109);
 }
@@ -393,7 +392,7 @@ section > h2 {
   text-align: left;
   padding: 0;
   margin-bottom: 0;
-  font-weight: bold;
+
   line-height: 34px;
   font-family: 'Ubuntu', 'Arial Narrow', Arial, sans-serif;
 }
