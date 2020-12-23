@@ -325,10 +325,12 @@ section > h2 {
 .first-product-info {
   color: rgb(0, 0, 0);
   margin-left: 8px;
+  z-index: -1;
 }
 
 .second-product-info {
   margin-right: 20px;
+  z-index: -1;
 }
 
 .text-hr {
@@ -677,10 +679,31 @@ hr.rainbow {
   animation-duration: 1.3s;
 }
 
+.rubberBand {
+  animation: bounceIn;
+  animation-duration: 2.5s;
+}
+
 .delay {
   animation: fadeIn;
   animation-duration: 1.7s;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.topScrollButton {
+  position: fixed;
+  z-index: 50;
+  bottom: 0;
+  right: 0;
+  padding: 6px;
+}
+
+.topScrollButton img {
+  width: 55px;
 }
 
 @media all and (max-width: 1290px) {

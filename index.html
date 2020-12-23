@@ -65,6 +65,7 @@
     </nav>
   </header>
   <main>
+    <div class='hidden topScrollButton' id='topScrollButton'><a href="#top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAHAUlEQVR4nO2acWzV1RXHP+d37ys1stASNxwMO0GzrYWChQEKpRXSGcGMlkoRMYiwuM10KctchEWbJls2UBnq3ATRorIMKN06SIU61pTadQkThBVwqBMJurpkzlUqQqHvnv3x+qTB176+19/zZev7JPefe8+9557v7/zO773f/UGKFClSpBi6SKIWzrpPv+YMPxPHHAAVGg2sOfWknEiUz3hIiADjv6MTgh4tQMZlQx2iFLz9lLQlwm88eH4v+OVVmoFQZ5QMq9QbuMbrJssq9UbJ8KDumu9qpt9+48VnAVTSz1Ntleus48iIIIvf+pW8c/JpOd19jkVWOWiVcenKDhap8dd3fPgqQPa9VHqOEuP4gCALDz0tH4fHTj0n562j1Djet46i7Ewe8tN3vPhWAyZ8S4tE2AuIeMxv2yQN3/+zXuGgCUE9Zc6Gm+Rc7rd1rjpeAjyF0mObpc6vPcSDLxlww0rNsso24zDG8WDbJmkAEGW9gelGmeEJjwK0bZJGE6TSOMQ6qvNW6nV+7CFeBp0Bhcs1vdOjFchT2P1qNcUg+oM/6a2e8GJvH6IseHiW7AaVKSuoAW4Hjl68yI1tW+XsYPcSD4POgHPwlFXyLLwhlmUgen+rfiEgbDEgBgg3T3j2Ry/rF0E0HVZY5TWrTLzCsnnQkcTJoASYuUzLjbLcOD6yoaL3IaoyTNniKaM8Dd3ovdpVeDyPqrRWS6cVFhrHGeNYctNy/Z5fQcVC3ALMXK4zPFhvFLWwsvV5OQ7wYAurPGWeUeijFT3USgVAa7W8boLcbRQ1jvUFd2m+X4ENlLhqwNwlOipoOQSMQXh0/wvyQ4CqVp2A4xUgPcoSXXjMqJopRwAKl+kjKPcD/wxcZMq+7dIez77iIeYMKCxUi0eNcYwxjiZOsyY8ZrrZapT0fq5+uA0zQarD8z5/jtXW8QfjuNoZahct0jS/AoxGzAKkjWa9VWZb5T0rLN2/X7p7LfZhhPu+r9YRnrdzpwTVcKdVTlnlxjMBHvYrwGjEdAvMX6x3qLAN6AIK9myXA9HmrG1WBVhdIFF9zbtDpwPNwDBRlry4Q7bHsr94iCkDeooeRqkYSPBwKe0Hwp7tcsAoFT1zHollb/FiYzJWtCeWjcVlurEvu9/XXLrakYIvLtO+JRmgWH4RUwZY5R7rOGkd9Ncud3C5k2jzTZC3AsqKwYU2wJhiMd65U/YB4/saX1z66SsbKQPCfTt+G70uJJqYBIiGcRH6BmiXLPwVoJ+rHa0vWaQE8HWxCKkdqcpGsksWqQzwc7GUAKmnwKf7vKGUAZGKW6Rgh1YRHKBdskgVQT8Xi1TcItaA/9dbwA7wFohklywS/xgcShnwv1gEfT0dNsoFo1CVc+mtrqd0egpNNTq8l91Zo7Bupn7OT//x4KsAnqPTOBg5khHhPqO8ZxTslYzu1XfSOLCQ46f/ePBVgIBy2io4ZVwvB6cNYBzZ4T7r2G8VAo6lfvqPB39vAcdrxkEgyORwX8Cxz4TOAb75SV+QZ4zDecq9T0zTSX7uIVb8FqDFKHjB0JdhPQ529bzmLj5YoyMA7jsgbcaxyShpAWHPxiSK4O83Qh4vGUUNzP9lYajofX2BvO4pjR5kesN44BPTIBUG9hpltAcHNk/Xx5+ZqtNeyNUrfd1TFHx/K/vsVG0GZotSseKQPAHQVqdTnPAK0OWE/LwFchBgS6Gmu7P8BGUVkZ+Yg6FdhK3DP6ay7Lhc6MvIdwGem6qlotQC/+pOZ/zKVukEOFanv1AoR/mHU2ZMKpV3w3N+fYNmBz3uAYqAscBIH7e07u5DsrqvQd8FqEK98XkcFsgV5cdLD0slQFOT2lEdNABzgXaFkpwS+Yvf/sP8ZorOckoL0H7XqzKmL7uEHExsy9V8PJqBbhWK7jwszQBt9ZqZdoFaYA5wXuGxdGHdtSXS0e+C8e5jcuigZsmRvg9gEnYysyNXN4iwCuXfRplWelROQigTxnTwc1HKe/z/R5RdwO6g8rdux7s5ZfKRH3uomRQSoOyvSRCgJkfTrMcfgXzghML8sAgAb9ZqjoG1CLf57XtcaSjg300MCbDwaBIEAKifqJlBpQmYBLyvHguL26Slt807tXp9EIpFKUIYC3wJGB5pvYGSdXso4F0TQgIsOJYkAQDqJmtG4CK7CWXCBWCD18VP5/1dziTad31OSIDbjvctgO9fi19OyRHpuDqdudbxmHEEjOMBsbzZ8FUt3/WVxP4bNC76u4fP9Hi6IVvzxfGkQG5P11lgL0qjGg7TxdtpY/ng5l7fHQ3Gl+d4GWj/xonP+DHYH1WoN/t6SoByhIJE70Fg7c1vyJp+xpNH47WaZQPcIjBLlRxCBXAk/rypakfYelWAypx+fgqnSJEiRYqhzH8B5DWwkamneSEAAAAASUVORK5CYII="/></a></div>
     <section class='fade intro-section'>
       <div class='intro-text'>
         <span><span class='blue'>Coding</span> - <span class='violet'>Creating</span> - <span
@@ -94,7 +95,7 @@
           <a href='http://www.dndparty.net' target='_blank'><img src='/images/product1.png'
               alt='desktop, phone, ipad' /></a>
         </div>
-        <div class='first-product-info'>
+        <div class='hidden first-product-info' id='first-product-info' >
           <div class='background-box'></div>
           <a href='http://www.dndparty.net' target='_blank'>
             <h3>DndParty.net</h3>
@@ -128,7 +129,7 @@
         </div>
       </div>
       <div class='second-product'>
-        <div class='second-product-info'>
+        <div class=' hidden second-product-info' id='second-product-info'>
           <div class='background-box-second'></div>
           <a href='http://ways-client.vercel.app/' target='_blank'>
             <h3>Ways</h3>
@@ -170,7 +171,7 @@
           <a href='https://richardscripts.github.io/QuizApp/' target='_blank'><img src='/images/product3.png'
               alt='desktop, phone, ipad' /></a>
         </div>
-        <div class='first-product-info'>
+        <div class='hidden first-product-info' id='third-product-info'>
           <div class='background-box-third'></div>
           <a href='https://richardscripts.github.io/QuizApp/' target='_blank'>
             <h3>Don't Panic!</h3>
@@ -281,6 +282,7 @@
       <a rel="noopener noreferrer" target="_blank" href="https://www.flaticon.com/">FlatIcons</a>
     </p>
   </footer>
+  <script  type="text/javascript" src="/index.js"></script>
 </body>
 
 </html>
