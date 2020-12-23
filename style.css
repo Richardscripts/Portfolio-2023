@@ -768,12 +768,14 @@ hr.rainbow {
   .third-product {
     margin: auto;
     margin-bottom: 40px;
+    z-index: 50;
   }
 
   .second-product-info,
   .first-product-info {
     margin-right: 0;
     margin-left: 0px;
+    z-index: 50;
   }
 
   .contact-section-info {
