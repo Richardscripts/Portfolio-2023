@@ -679,8 +679,13 @@ hr.rainbow {
   animation-duration: 1.3s;
 }
 
-.rubberBand {
-  animation: bounceIn;
+.bounceOutDown {
+  animation: bounceOutDown;
+  animation-duration: 2.5s;
+}
+
+.bounceInUp {
+  animation: bounceInUp;
   animation-duration: 2.5s;
 }
 
