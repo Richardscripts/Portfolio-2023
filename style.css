@@ -255,7 +255,7 @@ section > h2 {
   position: absolute;
   height: 525px;
   width: 590px;
-  transform: translate(-20%, -9%);
+  transform: translate(60%, -9%);
   background-color: rgb(245, 245, 245);
   background-image: linear-gradient(to left, rgb(247, 247, 247), white);
   border-radius: 8px;
@@ -264,9 +264,9 @@ section > h2 {
 .background-box-second {
   z-index: -1;
   position: absolute;
-  height: 510px;
+  height: 545px;
   width: 590px;
-  transform: translate(-12%, -8%);
+  transform: translate(-57%, -8%);
   background-image: linear-gradient(to right, rgb(247, 247, 247), white);
   border-radius: 8px;
 }
@@ -276,7 +276,7 @@ section > h2 {
   position: absolute;
   height: 525px;
   width: 590px;
-  transform: translate(-20%, -9%);
+  transform: translate(42%, -9%);
   background-image: linear-gradient(to left, rgb(247, 247, 247), white);
   border-radius: 8px;
 }
@@ -325,12 +325,12 @@ section > h2 {
 .first-product-info {
   color: rgb(0, 0, 0);
   margin-left: 8px;
-  z-index: -1;
+  z-index: 50;
 }
 
 .second-product-info {
   margin-right: 20px;
-  z-index: -1;
+  z-index: 50;
 }
 
 .text-hr {
@@ -773,14 +773,12 @@ hr.rainbow {
   .third-product {
     margin: auto;
     margin-bottom: 40px;
-    z-index: 50;
   }
 
   .second-product-info,
   .first-product-info {
     margin-right: 0;
     margin-left: 0px;
-    z-index: 50;
   }
 
   .product-bottom-text {
