@@ -15,23 +15,23 @@ function myFunction() {
       'hidden topScrollButton';
   }
   if (
-    document.body.scrollTop > 600 ||
-    document.documentElement.scrollTop > 600
+    document.body.scrollTop > 475 ||
+    document.documentElement.scrollTop > 475
   ) {
     document.getElementById('first-product-info').className =
       'first-product-info fade';
   }
   if (
-    document.body.scrollTop > 1050 ||
-    document.documentElement.scrollTop > 1050
+    document.body.scrollTop > 950 ||
+    document.documentElement.scrollTop > 950
   ) {
     document.getElementById('second-product-info').className =
       'second-product-info fade';
   }
 
   if (
-    document.body.scrollTop > 1600 ||
-    document.documentElement.scrollTop > 1600
+    document.body.scrollTop > 1500 ||
+    document.documentElement.scrollTop > 1500
   ) {
     document.getElementById('third-product-info').className =
       'first-product-info fade';
