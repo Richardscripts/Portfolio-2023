@@ -724,7 +724,8 @@ hr.rainbow {
 @media all and (max-width: 1290px) {
   .background-box,
   .background-box-second,
-  .background-box-third {
+  .background-box-third,
+  .background-box-contact {
     display: none;
   }
   .first-product-img img,
