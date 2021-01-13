@@ -281,6 +281,16 @@ section > h2 {
   border-radius: 8px;
 }
 
+.background-box-contact {
+  z-index: -1;
+  position: absolute;
+  height: 525px;
+  width: 590px;
+  transform: translate(-22%, -9%);
+  background-image: linear-gradient(to left, rgb(247, 247, 247), white);
+  border-radius: 8px;
+}
+
 .product-tag {
   color: rgb(54, 54, 54);
   letter-spacing: 2px;
