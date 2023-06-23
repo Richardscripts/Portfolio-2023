@@ -1,6 +1,7 @@
-window.addEventListener('scroll', () => myFunction());
+window.addEventListener('scroll', () => onScrollEffects());
 
-function myFunction() {
+function onScrollEffects() {
+  console.log(document.documentElement.scrollTop);
   if (
     document.body.scrollTop >= 1200 ||
     document.documentElement.scrollTop >= 1200
@@ -35,5 +36,13 @@ function myFunction() {
   ) {
     document.getElementById('third-product-info').className =
       'first-product-info fade';
+  }
+
+  if (
+    document.body.scrollTop > 2400 ||
+    document.documentElement.scrollTop > 2400
+  ) {
+    document.getElementById('falling-man-image').className =
+      'falling-man-image';
   }
 }
