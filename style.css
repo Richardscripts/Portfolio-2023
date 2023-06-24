@@ -90,8 +90,11 @@ header > div {
   left: -180px;
   top: 300px;
   z-index: 10;
+}
+
+.fadeOut {
   animation: fadeOut;
-  animation-duration: .1s;
+  animation-duration: .4s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
@@ -103,6 +106,15 @@ header > div {
   animation-duration: 1s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+}
+
+.drawing-image {
+  border-radius: 100%;
+  max-width: 150px;
+  top: 14px;
+  filter: contrast(10) hue-rotate(200deg);
+  top: -55px;
+  position: absolute;
 }
 
 hr {
@@ -142,7 +154,7 @@ section > h2 {
 
 .intro-text > span > span:hover {
   font-style: italic;
-  box-shadow: 0px 12px 8px rgb(244, 244, 244);
+  box-shadow: 0px 14px 6px rgb(250, 250, 250);
 }
 
 .intro-text > p {
@@ -185,6 +197,7 @@ section > h2 {
 }
 
 .portfolio-section {
+  position: relative;
   margin-top: 110px;
 }
 
@@ -712,6 +725,12 @@ hr.rainbow {
     rgb(189, 50, 207),
     rgb(50, 207, 181)
   );
+  transition: transform 2s;
+  cursor: pointer;
+}
+
+.rainbow:hover {
+  transform: rotate(20deg);
 }
 
 .fade {
@@ -737,6 +756,10 @@ hr.rainbow {
 
 .hidden {
   opacity: 0;
+}
+
+.hide {
+  display: none;
 }
 
 .topScrollButton {
