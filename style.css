@@ -111,7 +111,6 @@ header > div {
 .drawing-image {
   border-radius: 100%;
   max-width: 150px;
-  top: 14px;
   filter: contrast(10) hue-rotate(200deg);
   top: -55px;
   position: absolute;
