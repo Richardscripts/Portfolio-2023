@@ -99,18 +99,16 @@ header > div {
   animation-fill-mode: forwards;
 }
 
-.falling-man-image {
+.light-bulb-image {
+  max-width: 150px;
+  filter: brightness(1.6);
   position: relative;
-  top: -35px;
-  animation: zoomOutDown;
-  animation-duration: 1s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  left: 427px;
 }
 
 .drawing-image {
   border-radius: 100%;
-  max-width: 150px;
+  max-width: 120px;
   filter: contrast(10) hue-rotate(200deg);
   top: -55px;
   position: absolute;
@@ -412,7 +410,7 @@ section > h2 {
 
 .more-projects-button {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 120px;
 }
 
 .more-projects-button > a:hover {

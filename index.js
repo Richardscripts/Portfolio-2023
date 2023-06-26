@@ -48,12 +48,4 @@ function onScrollEffects() {
     document.getElementById('third-product-info').className =
       'first-product-info fade';
   }
-
-  if (
-    document.body.scrollTop > 2400 ||
-    document.documentElement.scrollTop > 2400
-  ) {
-    document.getElementById('falling-man-image').className =
-      'falling-man-image';
-  }
 }
