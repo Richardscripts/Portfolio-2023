@@ -100,10 +100,9 @@ header > div {
 }
 
 .light-bulb-image {
-  max-width: 150px;
+  display: flex;
+  justify-content: center;
   filter: brightness(1.6);
-  position: relative;
-  left: 427px;
 }
 
 .drawing-image {
