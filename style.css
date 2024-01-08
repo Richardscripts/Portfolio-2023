@@ -85,13 +85,6 @@ header > div {
   color: rgb(50, 207, 181) !important;
 }
 
-.climbing-man-image {
-  position: absolute;
-  left: -180px;
-  top: 300px;
-  z-index: 10;
-}
-
 .fadeOut {
   animation: fadeOut;
   animation-duration: .4s;
@@ -118,7 +111,7 @@ hr {
   height: 2px;
   background-color: rgb(204, 204, 204);
   border: none;
-  animation: tada 3s;
+  animation: tada 5s;
 }
 
 section > h2 {
