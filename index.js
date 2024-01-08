@@ -1,51 +1,44 @@
-window.addEventListener('scroll', () => onScrollEffects());
+window.addEventListener('scroll', onScrollEffects);
 
 function onScrollEffects() {
-  console.log(document.documentElement.scrollTop);
-  if (
-    document.body.scrollTop >= 1200 ||
-    document.documentElement.scrollTop >= 1200
-  ) {
-    document.getElementById('topScrollButton').className =
-      'topScrollButton bounceInUp';
-  } else if (
-    document.body.scrollTop <= 600 ||
-    document.documentElement.scrollTop <= 600
-  ) {
-    document.getElementById('topScrollButton').className =
-      'hidden topScrollButton';
+  const scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
+
+  showTopScrollButton(scrollTop);
+  fadeOutDrawingImage(scrollTop);
+  showProductInfo(scrollTop);
+}
+
+function showTopScrollButton(scrollTop) {
+  const topScrollButton = document.getElementById('topScrollButton');
+  if (scrollTop >= 1200) {
+    topScrollButton.className = 'topScrollButton bounceInUp';
+  } else if (scrollTop <= 600) {
+    topScrollButton.className = 'hidden topScrollButton';
+  }
+}
+
+function fadeOutDrawingImage(scrollTop) {
+  const drawingImage = document.getElementById('drawing-image');
+  if (scrollTop > 150) {
+    drawingImage.className = 'drawing-image fadeOut';
+  }
+}
+
+function showProductInfo(scrollTop) {
+  const firstProductInfo = document.getElementById('first-product-info');
+  const secondProductInfo = document.getElementById('second-product-info');
+  const thirdProductInfo = document.getElementById('third-product-info');
+
+  if (scrollTop > 475) {
+    firstProductInfo.className = 'first-product-info fade';
   }
 
-  if (
-    document.body.scrollTop > 150 ||
-    document.documentElement.scrollTop > 150
-  ) {
-    document.getElementById('drawing-image').className =
-      'drawing-image fadeOut';
+  if (scrollTop > 950) {
+    secondProductInfo.className = 'second-product-info fade';
   }
 
-  if (
-    document.body.scrollTop > 475 ||
-    document.documentElement.scrollTop > 475
-  ) {
-    document.getElementById('first-product-info').className =
-      'first-product-info fade';
-  }
-
-  console.log(document.documentElement.scrollTop);
-  if (
-    document.body.scrollTop > 950 ||
-    document.documentElement.scrollTop > 950
-  ) {
-    document.getElementById('second-product-info').className =
-      'second-product-info fade';
-  }
-
-  if (
-    document.body.scrollTop > 1500 ||
-    document.documentElement.scrollTop > 1500
-  ) {
-    document.getElementById('third-product-info').className =
-      'first-product-info fade';
+  if (scrollTop > 1500) {
+    thirdProductInfo.className = 'first-product-info fade';
   }
 }
