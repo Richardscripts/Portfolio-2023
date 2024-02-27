@@ -111,7 +111,6 @@ hr {
   height: 2px;
   background-color: rgb(204, 204, 204);
   border: none;
-  animation: tada 5s;
 }
 
 section > h2 {
